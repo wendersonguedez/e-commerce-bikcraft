@@ -1,95 +1,39 @@
-body {
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-}
+@import "./global/global.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
 
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
+@import "./global/header.css";
+@import "./global/footer.css";
 
-a {
-	text-decoration: none;
-}
+/* Utilidades */
+@import "./utilidades/componentes.css";
+@import "./utilidades/formulario.css";
 
-.header-bg {
-	background-color: #000000;
-}
+/* Home */
+@import "./home/introducao.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
 
-.header {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 20px;
-	justify-content: space-between;
-	align-items: center;
-	box-sizing: border-box; /* respeita as dimensões definidas de um elemento, fazendo com que o padding não seja somado, mas o seu valor ainda é aplicado. */
-	padding: 20px;
-	max-width: 1200px;
+/* Bicicletas */
+@import "./bicicletas/bicicletas-lista.css";
+@import "./bicicletas/bicicletas.css";
 
-	/* ao passar de 1200px, centraliza os elementos ao centro. */
-	margin-left: auto;
-	margin-right: auto;
-}
+/* Bicicleta */
+@import "./bicicleta/nimbus.css";
+@import "./bicicleta/seguro.css";
 
-.header-menu {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 40px;
-}
+/* Seguros */
+@import "./seguros/seguros.css";
+@import "./seguros/vantagens.css";
+@import "./seguros/perguntas.css";
 
-.header-menu a {
-	display: inline-block;
-	padding: 16px 0px;
-	color: #ffffff;
-	font-size: 1.125rem;
-	position: relative;
-}
+/* Contato */
+@import "./contato/contato.css";
+@import "./contato/lojas.css";
 
-/* criando detalhe abaixo dos links. */
-.header-menu a:after {
-	content: "";
-	display: block;
-	height: 2px;
-	width: 0;
-	background-color: #ffffff;
-	margin-top: 4px;
-	transition: 0.3s;
-	position: absolute;
-}
+/* Orçamento */
+@import "./orcamento/orcamento.css";
 
-/* ao passar o mouse por cima de qlqr link, o detalhe será exibido. */
-.header-menu a:hover:after {
-	width: 100%; /* toda a largura do elemento pai (links) */
-}
-
-@media (max-width: 800px) {
-	.header-menu {
-		gap: 20px;
-	}
-
-	.header-menu a {
-		background-color: #111111;
-		padding: 12px 16px;
-		border-radius: 4px;
-	}
-
-	.header-menu a:hover {
-		background-color: #2e2e2e;
-	}
-
-	.header a:after {
-		display: none;
-	}
-}
-
-@media (max-width: 600px) {
-	.header-menu {
-		gap: 12px;
-	}
-
-	.header-menu a {
-		padding: 8px 12px;
-		font-size: 14px;
-	}
-}
+/* Termos */
+@import "./termos/termos.css";

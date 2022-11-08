@@ -1,0 +1,19 @@
+.termos {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.termos h2 {
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+/* somente para h2 que venha após o p. ou seja, o 2º e 3º. */
+.termos p + h2 {
+	margin-top: 40px;
+}
+
+.termos p {
+	max-width: 75ch;
+	margin-bottom: 24px;
+}
