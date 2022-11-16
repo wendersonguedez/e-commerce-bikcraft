@@ -31,7 +31,7 @@ img {
 	display: block;
 }
 
-/* elementos que tiverem src e terminaram com '.jpg' */
+/* somente imagens do tipo '.jpg' */
 img[src$=".jpg"] {
 	border-radius: 4px;
 }
