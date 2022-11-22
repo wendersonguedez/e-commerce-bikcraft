@@ -37,7 +37,8 @@
 }
 
 /* exibindo detalhe. */
-.header-menu a:hover:after {
+.header-menu a:hover::after,
+.header-menu a.ativo::after {
 	width: 100%; /* toda a largura do elemento pai (links) */
 }
 
